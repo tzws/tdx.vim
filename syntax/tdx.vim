@@ -40,7 +40,8 @@ syn keyword tdxFinanceFunction CAPITAL FINANCE
 syn keyword tdxLineFunction LINETHICK
 syn keyword tdxLineTypeFunction STICK COLORSTICK VOLSTICK LINESTICK CROSSDOT CIRCLEDOT POINTDOT
 
-" syn region tdxComment start=/{/ end=/}/ contains=ALL
+syn region tdxComment start=/{/ end=/}/ keepend contains=tdxTimeFunction,tdxMathFunction,tdxStatisticsFunction,tdxShapeFunction,tdxIndexFunction,tdxDrawFunction,tdxFinanceFunction,tdxLineFunction extend
+" contains=ALL
 " syn region tdxComment start="{" end="}" contained contains=ALL
 " syn region tdxComment start="{" end="}" contains=ALL
 " syn region tdxComment start="{" end="}" contained
@@ -82,7 +83,7 @@ hi link tdxVariable Exception
 hi link tdxNumber                 Number
 hi link tdxFloat                  Number
 
-" hi link tdxComment Comment
+hi link tdxComment Comment
 " hi def link tdxComment          Comment
 
 hi link tdxComment1 Comment
